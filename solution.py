@@ -21,10 +21,9 @@ import random
 # Ideas: Add more conditions, change the topic entirely,
 # or add a second input and a second set of branches.
 
-# Rock, Paper, Sissors Game
-# Rock, Paper, Sissors Game
-user_hand = input('Type "Rock" "Paper" or "Sissors":\n')
-options = ("Rock", "Paper", "Sissors")
+# Rock, Paper, Scissors Game
+user_hand = input('Type "Rock" "Paper" or "Scissors":\n')
+options = ("Rock", "Paper", "Scissors")
 
 comp_hand = random.choice(options)
 
@@ -34,22 +33,22 @@ print(f"\n\nYou chose {user_hand}. Comuter chose {comp_hand}.\n")
 if user_hand == "Rock":
     if comp_hand == "Paper":
         print(f"{comp_hand} beats {user_hand}. Computer wins!\n\n")
-    elif comp_hand == "Sissors":
+    elif comp_hand == "Scissors":
         print(f"{user_hand} beats {comp_hand}. User wins!\n\n")
     else:
         print("It's a tie!\n\n")
 
 #You chose Paper
 if user_hand == "Paper":
-    if comp_hand == "Sissors":
+    if comp_hand == "Scissors":
         print(f"{comp_hand} beats {user_hand}. Computer wins!\n\n")
     elif comp_hand == "Rock":
         print(f"{user_hand} beats {comp_hand}. User wins!\n\n")
     else:
         print("It's a tie!\n\n")
 
-#You chose Sissors
-if user_hand == "Sissors":
+#You chose Scissors
+if user_hand == "Scissors":
     if comp_hand == "Rock":
         print(f"{comp_hand} beats {user_hand}. Computer wins!\n\n")
     elif comp_hand == "Paper":
